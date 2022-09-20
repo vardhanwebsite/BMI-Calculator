@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "tax.jpg" type = "image/x-icon">
+    <title>Fare calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="inner-box" id="card">
+        <div class="card-front">
+          <h2 id="h2">Not afraid of heights - afraid of widths.
+          </h2>
+          <button type="button" class="button" id="btn"  onclick="openRegister()">
+            Calculate BMI
+          </button>
+        </div>
+        <div class="card-back">
+          <div><h2 class="h" id="h2">Enter Details </h2></div>
+          
+
+          <h3 class="h3">Your Height</h3>
+          <input type="text" class="type" id="height" placeholder="Height in cm"  required>
+          <br><span class="error" id="height_error"></span>
+        
+          <h3 class="h3">Your Weight</h3>
+          <input type="text" class="type" id="weight" placeholder="Weight in KG" required><br>
+          <span class="error" id="weight_error"></span>
+          <div id="tot">
+          <button type="button" class="button1" id="bmi"><p id="h3"> Check BMI </p> </button>
+          <span> <input type="text" class="type" id="type3" placeholder="Your BMI" readonly ></span>
+           </div>
+             
+
+           <div id="tot">
+            <button type="button" class="button1" id="fit"><p id="h3"> Fitnes Report </p> </button>
+            <span> <input type="text" class="type" id="type4" placeholder="Your report" ></span>
+             </div>
+
+         
+
+             <div id="footer"><img id="img" src="arrow.png"></div>
+  
+
+        </div>
+      </div>
+      </div>
+  </div>
+     
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script
+        defer
+        src="https://maps.googleapis.com/maps/api/js?libraries=places&language=en&key= AIzaSyCIvokviNISaiUKCsUFvX7uh8msJH4sJ8g"
+        type="text/javascript"
+      ></script>
+</body>
+</html>
