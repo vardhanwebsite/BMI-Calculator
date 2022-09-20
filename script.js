@@ -48,25 +48,31 @@ function openRegister() {
 
   })
 
+ 
+
+
+
+
+
+
+
+
+ 
   fit.addEventListener("click",function(){
-     if(result.value<18.6){
+     if((result.value<18.6)&&(result.value>0)){
       report.value="under weight";
      }
      else if(result.value>=18.6 && result.value<=24.9){
       report.value="Fit";
      }
-     else{
+     else if(result.value>24.9){
       report.value="Over Weight";
+     }
+
+     else{
+      alert("The input not valid for fitness report");
+      report.value="";
      }
   })
 
-
-
-
-
-
-
-
- 
- 
 
